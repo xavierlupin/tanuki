@@ -1,0 +1,86 @@
+// https://html.spec.whatwg.org/multipage/#toc-semantics
+// 4.1 The document element
+html
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+  box-sizing: border-box
+  font-size: 14px
+
+*, *:before, *:after
+  box-sizing: inherit
+
+// 4.2 Document metadata
+// 4.3 Sections
+body
+  font-family: Helvetica, Arila, "文泉驛正黑", "WenQuanYi Zen Hei", "PingFangTC-Regular", Meiryo,"微軟正黑體", "Microsoft JhengHei", sans-serif
+  margin: 0
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  margin-top: 0
+
+// 4.4 Grouping content
+p,
+pre
+  margin: 0
+  overflow-wrap: break-word
+  white-space: pre-wrap
+
+// 4.5 Text-level semantics
+a
+  cursor: pointer
+  display: inline-block
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+span
+  display: inline-block
+
+// 4.6 Links
+// 4.7 Edits
+// 4.8 Embedded content
+// 4.9 Tabular data
+table
+  border-collapse: collapse
+  border-spacing: 0
+  width: 100%
+  th,
+  td
+    border: thin solid
+    padding: .5rem
+
+// 4.10 Forms
+label
+  display: inline-block
+
+input[type="range"],
+input[type="color"],
+input[type="file"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button
+  cursor: pointer
+
+input:not([type="hidden"]):not([type="range"]):not([type="color"]):not([type="checkbox"]):not([type="radio"]):not([type="image"]),
+button,
+select,
+textarea
+  border: thin solid
+  font-family: Helvetica, Arila, "文泉驛正黑", "WenQuanYi Zen Hei", "PingFangTC-Regular", Meiryo,"微軟正黑體", "Microsoft JhengHei", sans-serif
+  font-size: 1rem
+  outline: none
+  padding: .5rem
+
+input:not([type="hidden"]):not([type="color"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="submit"]):not([type="image"]):not([type="reset"]):not([type="button"])
+select,
+textarea
+  width: 100%
+
+// 4.11 Interactive elements
+// 4.12 Scripting

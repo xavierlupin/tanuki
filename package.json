@@ -26,6 +26,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "jest": "^26.6.3",
+    "stylus": "^0.54.8",
     "webpack": "^5.17.0",
     "webpack-cli": "^4.4.0"
   },
@@ -35,7 +36,9 @@
   "scripts": {
     "js:dev": "webpack --config src/config/webpack.config.js --mode development --watch",
     "js:build": "webpack --config src/config/webpack.config.js --mode production",
-    "build": "npm run js:build",
+    "css:dev": "stylus --watch src/index.styl --out static/css/bundle.css",
+    "css:build": "stylus --compress src/index.styl --out static/css/bundle.css",
+    "build": "npm run js:build && npm run css:build",
     "test": "jest"
   }
 }
